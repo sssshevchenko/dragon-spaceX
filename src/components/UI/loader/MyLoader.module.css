@@ -1,0 +1,22 @@
+.loader__item {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.loader {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px dashed rgb(30, 83, 104);
+    animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg) scale(1);
+    }
+    to{
+        transform: rotate(360deg) scale(1.4);
+    }
+}
