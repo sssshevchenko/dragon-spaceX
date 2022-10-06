@@ -15,5 +15,5 @@ jobs:
       - name: install modules
         run: npm install
       - name: build project
-        run: npm run build
+        run: sudo npm run build
       
