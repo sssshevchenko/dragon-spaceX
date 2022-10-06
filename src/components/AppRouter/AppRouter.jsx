@@ -7,7 +7,7 @@ const AppRouter = () => {
     const {isAuth} = useAuth()
 
     return (
-        !isAuth 
+        isAuth 
                 ?<Routes>
                         {privateRoutes.map(route => 
                             <Route path={route.path}
