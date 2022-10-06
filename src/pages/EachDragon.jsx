@@ -29,7 +29,7 @@ const EachDragon = () => {
             {status === 'loading' && <MyLoader />}
             {error && <MyError error={error} />}
             {infoEach.map((post, index) => 
-                <MainPage post={post} key={index} />
+                <MainPage post={post} key={index} data-testid='each'/>
             )}
         </div>
     );

@@ -18,7 +18,7 @@ const MainDragon = () => {
     }, [dispatch])     
     
     return (
-        <div data-testid='main'>
+        <div>
             <Navbar 
                 firstTitle='All dragons' 
                 secondTitle='Favorites' 
@@ -28,7 +28,7 @@ const MainDragon = () => {
             {status === 'loading' && <MyLoader />}
             {error && <MyError error={error} />}
             {infoFirst.map((post, index) => 
-                <MainPage post={post} key={index}/>    
+                <MainPage post={post} key={index} data-testid='main'/>    
             )}
         </div>
     );
